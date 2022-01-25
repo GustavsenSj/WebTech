@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Ex 3.2 - Image alternatives</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
 </head>
+
 <body>
+    <picture>
+        <source media="(max-width:640px)" srcset="images/birdCropped.jpg 750w" sizes="100vwm" />
+        <source srcset="images/bird2400.webp 2400w, images/bird1200.webp 1200w" type="image/webp" sizes="80vw">
+        <source srcset="images/bird2400.jpg 2400w, images/bird1200.jpg 1200w" type="image/jpg" sizes="80vw">
+        <img src="images/bird1200.jpg" alt="A bird" />
+    </picture>
 
-<!-- TODO - add the picture element with alternative images here. -->
-<!--
-Note: the styling will work correctly only if th <img> element is a direct
-child of <body>!
--->
-
-<h1>Pictures are nice!</h1>
-
+    <h1>Pictures are nice!</h1>
 </body>
+
 </html>
