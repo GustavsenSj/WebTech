@@ -1,0 +1,11 @@
+main{
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+    background-color: black;
+    background-image: radial-gradient(ellipse farthest-corner at top left ,orange 5%, rgb(252, 193, 0) 10%, black 30%);
+}
+#globe{
+    width: 90%;
+    height: auto;
+    float: right;
+}
